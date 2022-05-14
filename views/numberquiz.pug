@@ -1,0 +1,11 @@
+html    
+    head
+    body
+        form(method="post")
+            h1 The Number Quiz
+            p Your current score is: #{correctAnswers}
+            p Guess the next number in sequence:
+            p #{sequence}
+            p Your Answer:
+            input(type="text" id='answer' name="answer")
+            input(type="submit" value="Submit")
