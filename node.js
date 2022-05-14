@@ -45,7 +45,7 @@ app.post('/', (req, res) => {
         }
 
         req.session.questionIndex = ++questionIndex;
-        // console.log(questionIndex);
+
         if (questionIndex != 5) {
             res.render('numberquiz', {
                 sequence: questions[questionIndex],
